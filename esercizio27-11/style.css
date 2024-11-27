@@ -1,0 +1,27 @@
+#logo {
+    text-align: center;
+
+    }
+
+#paragrafo{
+    text-align: center;
+    background-color: rgb(233, 235, 200);
+}
+
+.main{
+    text-align: center;
+
+}
+
+div h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#paragrafo2 {
+    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.lorem{
+    text-align:justify;
+    
+}
