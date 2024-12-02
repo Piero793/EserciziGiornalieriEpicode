@@ -65,8 +65,9 @@ let x =12;
 myName = "Lacitignola";
 console.log(myName);
 
-let valoreRiassegnato =("Una costante è un tipo di valore che una volta dichiarato non può essere modificato, ad es. data di nascita");
+let valoreRiassegnato =("Una costante è un tipo di valore che una volta dichiarato non può essere modificato (ad es. data di nascita), se modificato la console restituirà un messaggio di errore");
 console.log(valoreRiassegnato);
+
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
