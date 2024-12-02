@@ -91,3 +91,7 @@ console.log(name1 != name2);
 if (name2 ="john") {
   console.log(name1 == name2);
 }
+
+if (name1 && name2) {
+  console.log(name1==name2);
+}
