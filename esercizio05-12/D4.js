@@ -59,7 +59,9 @@ let n =50;
 
 function boundary () {
     if (n >= 20 && n <= 100 || n === 400 ){
-        return(true)
+        return true
+    }else {
+        return false
     }
 }console.log(boundary());
 
