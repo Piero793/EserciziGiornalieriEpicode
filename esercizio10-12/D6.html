@@ -83,14 +83,14 @@
      Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
   */
 
-    const changeTitle = function (nuovoTitolo) {
-      const titolo = document.getElementsByTagName("h1")[0];
-      titolo.innerText = nuovoTitolo;
+    const changeTitle = function () {
+      const titolo = document.querySelector("div h1");
+      titolo.innerText = "nuovoTitolo";
     }
 
 
     changeTitle("Nuovo Titolo della Pagina");
-    console.log("Titolo della pagina cambiato");
+    
 
 
 
@@ -184,7 +184,9 @@
      Scrivi una funzione che renda verde il background di ogni lista non ordinata
     */
 
-    const paintItGreen = function () { }
+    const paintItGreen = function () {
+      const bkgc = document.getElementById("firstList secondList ");
+     }
 
     /* ESERCIZIO 9
      Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
