@@ -7,7 +7,7 @@ const taskList = document.querySelector('#task-list');
 
 
 
-addTaskButton.addEventListener('click', () => {
+addTaskButton.addEventListener('click', (e) => {
     const taskText = newTaskInput.value;
     if (taskText.trim()) {
         const newTask = document.createElement('li');
@@ -18,12 +18,13 @@ addTaskButton.addEventListener('click', () => {
         deleteButton.textContent = 'Elimina';
         deleteButton.style.marginLeft = '10px';
         deleteButton.style.backgroundColor = "red";
-        deleteButton.addEventListener('click', () => {
-            taskList.removeChild(newTask);
+        deleteButton.addEventListener('click', (e) => {
+        taskList.removeChild(newTask);
+
         });
 
         newTask.appendChild(deleteButton);
-        newTask.addEventListener('click', () => {
+        newTask.addEventListener('click', (e) => {
             newTask.classList.toggle('completed');
         });
 
