@@ -1,21 +1,21 @@
 
 
 
-const newTaskInput = document.querySelector('#new-task-input');
-const addTaskButton = document.querySelector('#add-task-button');
-const taskList = document.querySelector('#task-list');
+        const newTaskInput = document.querySelector('#new-task-input');
+        const addTaskButton = document.querySelector('#add-task-button');
+        const taskList = document.querySelector('#task-list');
 
 
 
-addTaskButton.addEventListener('click', (e) => {
-    const taskText = newTaskInput.value;
-    if (taskText.trim()) {
+        addTaskButton.addEventListener('click', (e) => {
+        const taskText = newTaskInput.value;
+        if (taskText.trim()) {
         const newTask = document.createElement('li');
-        newTask.textContent = taskText;
+        newTask.innerHTML = taskText;
 
         // Bottone per eliminare il task
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Elimina';
+        deleteButton.innerHTML = 'Elimina';
         deleteButton.style.marginLeft = '10px';
         deleteButton.style.backgroundColor = "red";
         deleteButton.addEventListener('click', (e) => {

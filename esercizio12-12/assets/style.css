@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #tombola {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  #board {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    vertical-align: top;
+  }
+  
+  .cell.highlighted {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+   
+  }
+  
+  #last-number {
+    color: red;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  

@@ -24,7 +24,6 @@ h1 {
 
 input[type="text"] {
     padding: 10px;
-    width: calc(100% - 110px);
     margin-right: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -62,4 +61,5 @@ li {
 li.completed {
     text-decoration: line-through;
     color: black;
+    
 }
