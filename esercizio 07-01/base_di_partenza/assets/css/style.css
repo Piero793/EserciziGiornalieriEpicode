@@ -198,16 +198,4 @@ footer a {
     }
   }
 
-  @media  screen and (min-width: 1200px) {
-    header p,nav {
-        display: inline-block;
-        margin-left:  0;
-    }
-    
-    .tabella {
-      margin: 0 auto;
-    }
-  }
-  
- 
   
