@@ -31,7 +31,7 @@ function drawNumber() {
     let number;        //qui memorizzo il numero casuale generato
 
     do {
-        number = Math.floor(Math.random() * 76) + 1;         //qui parte il ciclo e verifico se il numero generato esiste già
+        number = Math.floor(Math.random() * 76) + 1;         // ciclo e verifico se il numero generato esiste già
 
     } while (drawnNumbers.includes(number));
 
