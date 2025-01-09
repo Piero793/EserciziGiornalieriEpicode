@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  background-color: #f2b400;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e09400;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Best Selling Products Styles */
+.best-selling {
+  margin-bottom: 30px;
+}
+
+.best-selling h2 {
+  color: #f2b400;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 1 30%; /* Adjust the width of each product */
+}
+
+.product img {
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+button {
+  background-color: #f2b400;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e09400;
+}
+
+/* Latest News Styles */
+.latest-news {
+  margin-bottom: 30px;
+}
+
+.latest-news h2 {
+  color: #f2b400;
+}
+
+.news-content {
+  display: flex;
+  align-items: center;
+}
+
+.news-content img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.news-content p {
+  flex: 1;
+}
