@@ -1,0 +1,14 @@
+$sizeH1: 600;
+$sizeP: 300;
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: $sizeH1;
+  p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: $sizeP;
+  }
+}
+
+$sizeH1: 600;
+$sizeP: 400;

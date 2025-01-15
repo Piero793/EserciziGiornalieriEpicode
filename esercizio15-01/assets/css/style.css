@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+}
+
+body {
+  color: #f4f4f4;
+}
+body button {
+  color: #0e6cff;
+  color: #ff8700;
+  color: #4caf50;
+}
+body .hero {
+  background-color: #640fc5;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 600;
+}
+h1 p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 300;
+}/*# sourceMappingURL=style.css.map */
