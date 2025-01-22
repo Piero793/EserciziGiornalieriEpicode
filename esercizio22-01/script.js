@@ -28,6 +28,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
     document.querySelectorAll(".discard-button").forEach((button) => {
       button.addEventListener("click", (event) => {
+        event.preventDefault;
         console.log("Eliminazione card:", event.target.closest(".col"));
         event.target.closest(".col").remove();
       });
