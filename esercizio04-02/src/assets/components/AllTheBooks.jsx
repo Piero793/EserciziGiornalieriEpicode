@@ -8,7 +8,7 @@ class AllTheBooks extends Component {
       <Container>
         <Row>
           {horror.map((books) => (
-            <Col lg={2} className="text-center" key={`films-${books.asin}`}>
+            <Col lg={2} className="text-center" key={`books-${books.asin}`}>
               <Card>
                 <Card.Img variant="top" src={books.img} />
                 <Card.Body>
