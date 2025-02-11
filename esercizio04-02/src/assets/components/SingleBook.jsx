@@ -1,20 +1,23 @@
-import { Button, Card, Container, Row, Col } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
+import horror from "../../../data/horror.json";
 
-const SingleBook = (prop) => {
+const SingleBook = (props) => {
+  console.log(props);
   return (
-    <Container>
-      <Row>
-        <Col lg={2} className="text-center">
+    <container>
+      <row>
+        <col>
           <Card>
-            <Card.Img variant="top" src={prop.src} />
+            <Card.Img variant="top" />
             <Card.Body>
-              <Card.Title>{prop.cardtitle}</Card.Title>
+              <Card.Title>{horror.img}</Card.Title>
+
               <Button variant="primary">Buy</Button>
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
-    </Container>
+        </col>
+      </row>
+    </container>
   );
 };
 
