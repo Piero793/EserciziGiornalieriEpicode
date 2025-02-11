@@ -15,38 +15,12 @@ const CommentArea = (props) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  // componentDidMount = async () => {
-  //   try {
-  //     let response = await fetch(
-  //       'https://striveschool-api.herokuapp.com/api/comments/' +
-  //         this.props.asin,
-  //       {
-  //         headers: {
-  //           Authorization:
-  //             'Bearer inserisci-qui-il-tuo-token',
-  //         },
-  //       }
-  //     )
-  //     console.log(response)
-  //     if (response.ok) {
-  //       let comments = await response.json()
-  //       this.setState({ comments: comments, isLoading: false, isError: false })
-  //     } else {
-  //       console.log('error')
-  //       this.setState({ isLoading: false, isError: true })
-  //     }
-  //   } catch (error) {
-  //     console.log(error)
-  //     this.setState({ isLoading: false, isError: true })
-  //   }
-  // }
-
-  useEffect(() => async (prevProps) => {
-    if (prevProps.asin !== props.asin) {
+  useEffect(() => async () => {
+    if (props.asin !== props.asin) {
       // this.setState({
       //   isLoading: true,
       // });
-      setLoading(false);
+      setLoading(loading);
       try {
         let response = await fetch("https://striveschool-api.herokuapp.com/api/comments/" + props.asin, {
           headers: {
@@ -61,12 +35,13 @@ const CommentArea = (props) => {
           //   isLoading: false,
           //   isError: false,
           // });
-          setComment([]);
+          setComment(comments);
         } else {
           setLoading({ loading: false, error: true });
         }
       } catch (error) {
         console.log(error);
+        setError(error);
         setLoading({ loading: false, error: true });
       }
     }
