@@ -3,7 +3,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 
 const Navbar = () => {
-  console.log("il logo si trova");
   return (
     <nav className="navbar navbar-expand-lg " data-bs-theme="dark" style={{ backgroundColor: "#221f1f" }}>
       <div className="container-fluid">
