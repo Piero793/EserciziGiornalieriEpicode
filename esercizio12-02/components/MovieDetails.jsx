@@ -15,18 +15,15 @@ const MovieDetails = () => {
     }
   }, [movieID]);
 
-  if (!movieDetails) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <Container className="mt-4">
+      <h1 className="text-center text-light mb-3">Dettagli </h1>
       <Row className="justify-content-center">
         <Col md={4}>
           <Card>
             <Card.Img variant="top" src={movieDetails.Poster} />
             <Card.Body>
-              <Card.Title>{movieDetails.Title}</Card.Title>
+              <Card.Title className="text-center">{movieDetails.Title}</Card.Title>
               <Card.Text>{movieDetails.Plot}</Card.Text>
             </Card.Body>
           </Card>
