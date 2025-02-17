@@ -1,13 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import BookList from "./BookList";
-import booksData from "./books.json";
+import fantasy from "../data/fantasy.json";
 
 describe("BookList component", () => {
-  it("should render the correct number of Bootstrap cards", () => {
-    render(<BookList books={booksData} />);
+  it("il numero di card è corretto", async () => {
+    render(<BookList books={fantasy} />);
 
-    const cards = screen.getAllByClassName("card");
+    const cards = screen.getAllByTestId("book-card");
 
-    expect(cards).toHaveLength(booksData.length);
+    expect(cards.length).toBe(150);
   });
 });
