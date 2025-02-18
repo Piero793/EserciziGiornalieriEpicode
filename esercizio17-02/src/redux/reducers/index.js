@@ -1,5 +1,5 @@
 const initialState = {
-  prefer: {
+  favorites: {
     content: [],
   },
 };
@@ -7,13 +7,16 @@ const initialState = {
 const mainReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_TO_PREFER":
+      console.log(action.payload + "", "aggiunto ai preferiti");
       return {
         ...state,
-        prefer: {
-          ...state.prefer,
-          content: [...state.prefer.content, action.payload],
+        favorites: {
+          ...state.favorites,
+          content: [...state.content, action.payload],
         },
       };
+    default:
+      return state;
   }
 };
 
